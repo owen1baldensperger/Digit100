@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <root>
+        <coder name="Owen"/>
+        <date><entries date="1858-08-23"></entries>August 23.</date>
+<!--James Buchanan was the president of the United States-->
+It <weath>rained very hard</weath> in Newfoundland from midnight until six A.M.
+
+<context>Newfoundland to Valentia.</context>
+<dialog><statement>“Your currents very irregular. Repeat.”</statement></dialog>
+
+<context>Valentia to Newfoundland.</context>
+<dialog><statement>“Signals weak.</statement> <ques>Will you take message from Lord Mayor?”</ques></dialog>
+
+<context>Newfoundland to Valentia.</context>
+<dialog><respo>“Yes; send little faster and better.”</respo></dialog>
+
+<context>Valentia to Newfoundland.</context>
+<dialog><statement>“Give ‘understand ‘<pattern>every twenty words.</pattern>”</statement></dialog>
+
+<context>Newfoundland to Valentia.</context>
+<dialog><statement>“All right. Send much faster.”</statement></dialog>
+<dialog><statement>“Understand, faster.”</statement></dialog> <context>Testing nearly the whole of the day at Valentia.</context>
+</root>
