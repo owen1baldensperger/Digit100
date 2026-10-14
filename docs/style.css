@@ -1,8 +1,8 @@
 body {
 
     /*background:papayaWhip*/
-    background: LightSteelBlue;
-    font-family: Comic-sans, Arial, Helvetica, sans-serif;
+    background: CornflowerBlue;
+    font-family: Aquire, Arial, Helvetica, sans-serif;
 }
 
 div.side-by-side {
@@ -15,6 +15,6 @@ img {
 }
 
 .featureBlock {
-    background-color:pink;
+    background-color:yellow;
     font-size: smaller;
 }
