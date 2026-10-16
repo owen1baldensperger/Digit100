@@ -1,44 +1,48 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
-    <!-- Try opening this file on your local computer in a web browser (Firefox, Chrome, etc). 
-     * On Windows, go to the browser and type control + o and browse to find this file to open it.
-     * On Mac, go to the browser and type command + o and browse to find this file to open it. 
-     Look for the text in the <title> element in the tab above the browser search bar. Do you see it? 
-    -->
     <head>
-        <!-- What's in the <head> element is a "meta" area not for display. 
-            It holds important information about the website's contents.
-            The text inside the <title> element does show in the top tab of a web browser. 
-             The <head> is where we will include info about styling the site, too. -->
-        <title>My Site!</title>
+        <title>Owen's Projects</title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- Here is a place where we can add a little styling code called CSS to this page. 
-            I used it to apply a background color to the body element.
-        -->
         <link rel="stylesheet" type="text/css" href="style.css" />
     </head>
     <body>
-        <!-- CONTENT FOR DISPLAY. The <body> element holds the content we see in the display window on the web browser.-->
-        <h1>My Projects!</h1>
-        <nav class="featureBlock">
-            <a href="index.html">Tester</a> | <a href="about.html">About Me!</a> | <a href="custompage.html">My Projects!</a>
-            
-        </nav>
-        <p>This is my projects page!</p>
+        <!-- CONTENT FOR DISPLAY -->
+        <h1>Owen's Film Projects</h1>
         
+        <!-- Updated Navigation Menu including the Projects page -->
+        <nav class="featureBlock">
+            <a href="index.html">Tester Page</a> | 
+            <a href="about.html">About Me!</a> | 
+            <a href="custompage.html">Custom Page</a> | 
+            <a href="projects.html">My Projects!</a>
+        </nav>
+        
+        <p>Welcome to my projects page! Check out my latest work and visit my YouTube channel below.</p>
         
         <div class="side-by-side">
-            <p>Go back to my <a href="index.html">Tester Page</a>.</p>
+            <div>
+                <h2>Featured Channel</h2>
+                <p>Explore all of my films, drone shots, and video editing work directly on my YouTube channel:</p>
+                <p>👉 <a href="https://www.youtube.com/@OwenBaldenspergerfilms" target="_blank">Owen Baldensperger Films on YouTube</a></p>
+                
+                <h3>Recent Highlights</h3>
+                <ul>
+                    <li><a href="https://www.youtube.com/@OwenBaldenspergerfilms" target="_blank">"Waves" – Independent Short Film Project</a></li>
+                    <li><a href="https://www.youtube.com/@OwenBaldenspergerfilms" target="_blank">Aerial Drone Cinematography Reel</a></li>
+                    <li><a href="https://www.youtube.com/@OwenBaldenspergerfilms" target="_blank">Music Video Projects &amp; Visuals</a></li>
+                </ul>
+            </div>
+            
             <figure>
-                <img src="images/llama_mp.jpg" />
-                <figcaption>Here is one of my more recent films called "Waves"!</figcaption>
-            </figure>
-           
+                <img src="images/llama_mp.jpg" alt="Film project preview" />
+                <figcaption>A still from one of my film projects. Click my channel link above to watch all my videos!</figcaption>
+            </figure> 
         </div>
+        
         <footer class="featureBlock">
             <p>If you enjoy my content please share!</p>
-            <p>We are...Penn State!</p>
+            <p>We are...Penn State Behrend!</p>
         </footer>
     </body>
 </html>
