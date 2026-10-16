@@ -5,6 +5,30 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" type="text/css" href="style.css" />
+        <style>
+            /* Custom styles to stack the images vertically and make them bigger */
+            .project-layout {
+                display: flex;
+                gap: 30px;
+                align-items: flex-start;
+            }
+            .video-column {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                flex: 1;
+            }
+            .video-column figure {
+                margin: 0;
+            }
+            .video-column img {
+                width: 100%;
+                max-width: 450px;
+            }
+            .bio-column {
+                flex: 1;
+            }
+        </style>
     </head>
     <body>
         <!-- CONTENT FOR DISPLAY -->
@@ -18,30 +42,39 @@
         
         <p>Welcome to my projects page! Click on any video title below to watch the video on YouTube.</p>
         
-        <div class="side-by-side">
-            <!-- Video 1: WAVES -->
-            <figure>
-                <img src="images/waves.webp" alt="WAVES film preview" />
-                <figcaption>
-                    <a href="https://www.youtube.com/watch?v=0UcyPMbmBbg" target="_blank">“WAVES” (An Owen Baldensperger Film)</a>
-                </figcaption>
-            </figure>
+        <div class="project-layout">
+            <!-- Left Side: Larger, Vertical Video List -->
+            <div class="video-column">
+                <!-- Video 1: WAVES -->
+                <figure>
+                    <img src="images/waves.webp" alt="WAVES film preview" />
+                    <figcaption>
+                        <a href="https://www.youtube.com/watch?v=0UcyPMbmBbg" target="_blank">“WAVES” (An Owen Baldensperger Film)</a>
+                    </figcaption>
+                </figure>
+                
+                <!-- Video 2: Signs -->
+                <figure>
+                    <img src="images/signs.webp" alt="Signs film preview" />
+                    <figcaption>
+                        <a href="https://www.youtube.com/watch?v=vpCTbGjL7Iw" target="_blank">“Signs” (An Owen Baldensperger Film)</a>
+                    </figcaption>
+                </figure>
+                
+                <!-- Video 3: Camera in the Club -->
+                <figure>
+                    <img src="images/cameraintheclub.webp" alt="Camera in the Club film preview" />
+                    <figcaption>
+                        <a href="https://www.youtube.com/@OwenBaldenspergerfilms" target="_blank">“Camera in the Club”</a>
+                    </figcaption>
+                </figure>
+            </div>
             
-            <!-- Video 2: Signs -->
-            <figure>
-                <img src="images/signs.webp" alt="Signs film preview" />
-                <figcaption>
-                    <a href="https://www.youtube.com/watch?v=vpCTbGjL7Iw" target="_blank">“Signs” (An Owen Baldensperger Film)</a>
-                </figcaption>
-            </figure>
-            
-            <!-- Video 3: Camera in the Club -->
-            <figure>
-                <img src="images/cameraintheclub.webp" alt="Camera in the Club film preview" />
-                <figcaption>
-                    <a href="https://www.youtube.com/@OwenBaldenspergerfilms" target="_blank">“Camera in the Club”</a>
-                </figcaption>
-            </figure>
+            <!-- Right Side: Bio / Paragraph -->
+            <div class="bio-column">
+                <h2>About My Work</h2>
+                <p>I fell in love with filmmaking from Mark Duplass's <em>Creep</em> movie, Seth Rogen and James Franco's <em>The Interview</em>. I love creating projects and sharing them with other people.</p>
+            </div>
         </div>
         
         <footer class="featureBlock">
