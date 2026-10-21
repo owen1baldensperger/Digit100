@@ -1,45 +1,84 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
-    <!-- Try opening this file on your local computer in a web browser (Firefox, Chrome, etc). 
-     * On Windows, go to the browser and type control + o and browse to find this file to open it.
-     * On Mac, go to the browser and type command + o and browse to find this file to open it. 
-     Look for the text in the <title> element in the tab above the browser search bar. Do you see it? 
-    -->
     <head>
-        <!-- What's in the <head> element is a "meta" area not for display. 
-            It holds important information about the website's contents.
-            The text inside the <title> element does show in the top tab of a web browser. 
-             The <head> is where we will include info about styling the site, too. -->
-        <title>Starter HTML</title>
+        <title>Owen's Projects</title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- Here is a place where we can add a little styling code called CSS to this page. 
-            I used it to apply a background color to the body element.
-        -->
         <link rel="stylesheet" type="text/css" href="style.css" />
+        <style>
+            .project-layout {
+                display: flex;
+                gap: 30px;
+                align-items: flex-start;
+            }
+            .video-column {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                flex: 1;
+            }
+            .video-column figure {
+                margin: 0;
+            }
+            .video-column img {
+                width: 100%;
+                max-width: 450px;
+            }
+            .bio-column {
+                flex: 1;
+            }
+        </style>
     </head>
     <body>
-        <!-- CONTENT FOR DISPLAY. The <body> element holds the content we see in the display window on the web browser.-->
-        <h1>Gallery</h1>
+        <!-- CONTENT FOR DISPLAY -->
+        <h1>Owen's Film Projects</h1>
+        
         <nav class="featureBlock">
-            <a href="index.html">Home</a> | <a href="about.html">About</a> | <a href="gallery.html">Gallery</a>
-            
+            <a href="index.html">Tester Page</a> | 
+            <a href="about.html">About Me!</a> | 
+            <a href="custompage.html">My Projects!</a>
         </nav>
-        <p>This is my Gallery page.</p>
         
+        <p>Welcome to my projects page! Click on any video title below to watch the video on YouTube.</p>
         
-        <div class="side-by-side">
-            <p>Go back to my <a href="index.html">main page</a>.</p>
-            <figure>
-                <img src="images/llama_mp.jpg" />
-                <figcaption>Here is a llama I encountered on an amazing hiking trip in Macchu
-                    Picchu, on the Inca Trail.</figcaption>
-            </figure>
-           
+        <div class="project-layout">
+            <!-- Left Side: Larger, Vertical Video List -->
+            <div class="video-column">
+                <!-- Video 1: WAVES -->
+                <figure>
+                    <img src="images/waves.webp" alt="WAVES film preview" />
+                    <figcaption>
+                        <a href="https://www.youtube.com/watch?v=0UcyPMbmBbg" target="_blank">“WAVES” (An Owen Baldensperger Film)</a>
+                    </figcaption>
+                </figure>
+                
+                <!-- Video 2: Signs -->
+                <figure>
+                    <img src="images/signs.webp" alt="Signs film preview" />
+                    <figcaption>
+                        <a href="https://www.youtube.com/watch?v=vpCTbGjL7Iw" target="_blank">“Signs” (An Owen Baldensperger Film)</a>
+                    </figcaption>
+                </figure>
+                
+                <!-- Video 3: Camera in the Club -->
+                <figure>
+                    <img src="images/cameraintheclub.webp" alt="Camera in the Club film preview" />
+                    <figcaption>
+                        <a href="https://www.youtube.com/@OwenBaldenspergerfilms" target="_blank">“Camera in the Club”</a>
+                    </figcaption>
+                </figure>
+            </div>
+            
+            <!-- Right Side: Bio / Paragraph -->
+            <div class="bio-column">
+                <h2>About My Work</h2>
+                <p>I fell in love with filmmaking from Mark Duplass's <em>Creep</em> movie, Seth Rogen and James Franco's <em>The Interview</em>. I love creating projects and sharing them with other people.</p>
+            </div>
         </div>
+        
         <footer class="featureBlock">
-            <p>Shout out to the w3c community, and the developers of markup languages, and the oXygen XML editor!</p>
-            <p>We are . . . Digit at Penn State Behrend!</p>
+            <p>If you enjoy my content please share!</p>
+            <p>We are...Penn State Behrend!</p>
         </footer>
     </body>
 </html>
